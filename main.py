@@ -22,6 +22,7 @@ def main():
                 return
 
         screen.fill((0, 0, 0)) # sets screen to black using tuple of rgb
+        player.update(dt)
         player.draw(screen)
         pygame.display.flip()
         milliseconds = clock.tick(60)
